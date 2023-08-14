@@ -3,9 +3,9 @@
 
 packages:
   all:
-    compiler:: gcc@11.4.0
+    compiler:: [gcc@11.4.0]
     providers:
-      mpi:: openmpi@4.0.3
+      mpi:: [openmpi@4.0.3]
   mpi:
     buildable: False
   openmpi:
@@ -67,10 +67,6 @@ packages:
     externals:
     - spec: krb5@1.15.1
       prefix: /usr
-  lustre:
-    externals:
-    - spec: lustre@2.12.7
-      prefix: /usr
   ncurses:
     externals:
     - spec: ncurses@6.3.20211021+termlib abi=6
@@ -99,10 +95,6 @@ packages:
     externals:
     - spec: rsync@3.1.2
       prefix: /usr
-  ruby:
-    externals:
-    - spec: ruby@2.0.0
-      prefix: /usr
   sed:
     externals:
     - spec: sed@4.2.2
@@ -114,10 +106,6 @@ packages:
   tar:
     externals:
     - spec: tar@1.26
-      prefix: /usr
-  texinfo:
-    externals:
-    - spec: texinfo@5.1
       prefix: /usr
   wget:
     externals:
