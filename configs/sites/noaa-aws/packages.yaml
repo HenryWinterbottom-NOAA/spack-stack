@@ -2,16 +2,16 @@ packages:
   all:
     compiler:: [intel@2022.1.2]
     providers:
-      mpi:: [intel-oneapi-mpi@2022.1.2,]
+      mpi:: [intel-oneapi-mpi@2021.3.0]
 
   mpi:
-    buildable: False
+    buildable: True
   intel-oneapi-mpi:
     externals:
-    - spec: intel-oneapi-mpi@2022.1.2%intel@2022.1.2
+    - spec: intel-oneapi-mpi@2021.3.0%intel@2021.3.0
       prefix: /apps/oneapi
       modules:
-      - impi/2022.1.2
+      - impi/2021.3.0
 
   # TODO: Add Python build exactly as that here:
   # /contrib/spack-stack/miniconda/apps/miniconda/py39_4.12.0; use
