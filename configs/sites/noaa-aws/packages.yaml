@@ -13,6 +13,10 @@ packages:
       modules:
       - impi/2022.1.2
 
+  # TODO: Add Python build exactly as that here:
+  # /contrib/spack-stack/miniconda/apps/miniconda/py39_4.12.0; use
+  # anchors to link the Python dependencies below.
+      
   bash:
     externals:
     - spec: bash@4.2.46
