@@ -15,14 +15,42 @@ spack:
   include: []
 
   specs:
-  - sigio
-  - sfcio
-  - g2
-  - g2tmpl
-  - ip
-  - nemsio
+  - cmake
+  - jpeg
   - zlib
+  - libpng
+  - szip
+  - jasper
+  - udunits
   - hdf5
   - netcdf-c
   - netcdf-fortran
-  - esmf
+  - parallelio
+  - nccmp
+  - nco
+  - cdo
+  - bacio
+  - sigio
+  - sfcio
+  - gfsio
+  - w3nco
+  - sp
+  - ip
+  - ip2
+  - landsfcutil
+  - nemsio
+  - nemsiogfs
+  - w3emc
+  - g2
+  - g2tmpl
+  - g2c
+  - crtm
+  - upp
+  - wrf_io
+  - bufr
+  - wgrib2
+  - prod_util
+  - grib_util
+  - ncio
+  - ncdiag
+
