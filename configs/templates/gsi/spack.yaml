@@ -46,7 +46,7 @@ spack:
   - g2c
   - crtm
   - upp
-  - wrf_io
+  - wrf-io
   - bufr
   - wgrib2
   - prod-util
