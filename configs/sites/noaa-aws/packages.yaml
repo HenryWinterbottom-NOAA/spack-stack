@@ -1,34 +1,18 @@
 packages:
   all:
-    compiler:: [intel@2021.3.0, gcc@9.2.0]
-    #compiler:: [intel@18.0.5]
+    compiler:: [intel@2022.1.2]
     providers:
-      mpi:: [intel-oneapi-mpi@2021.3.0, openmpi@3.1.4]
-      #mpi:: [intel-mpi@2018.4.274]
+      mpi:: [intel-oneapi-mpi@2022.1.2,]
 
-### MPI, Python, MKL
   mpi:
     buildable: False
   intel-oneapi-mpi:
     externals:
-    - spec: intel-oneapi-mpi@2021.3.0%intel@2021.3.0
+    - spec: intel-oneapi-mpi@2022.1.2%intel@2022.1.2
       prefix: /apps/oneapi
       modules:
-      - impi/2021.3.0
-  intel-mpi:
-    externals:
-    - spec: intel-mpi@2018.4.274%intel@18.0.5
-      prefix: /apps/intel/compilers_and_libraries_2018
-      modules:
-      - impi/2018.4.274
-  openmpi:
-    externals:
-    - spec: openmpi@3.1.4%gcc@9.2.0
-      prefix: /apps/openmpi/3.1.4/gnu/gcc-9.2.0
-      modules:
-      - openmpi/3.1.4
+      - impi/2022.1.2
 
-### All other external packages listed alphabetically
   bash:
     externals:
     - spec: bash@4.2.46
