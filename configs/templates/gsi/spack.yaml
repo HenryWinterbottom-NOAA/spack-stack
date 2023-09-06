@@ -49,8 +49,8 @@ spack:
   - wrf_io
   - bufr
   - wgrib2
-  - prod_util
-  - grib_util
+  - prod-util
+  - grib-util
   - ncio
-  - ncdiag
+  - gsi-ncdiag
 
