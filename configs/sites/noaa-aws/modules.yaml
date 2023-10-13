@@ -2,8 +2,3 @@ modules:
   default:
     enable::
     - lmod
-    lmod:
-      exclude:
-      - ecflow
-      include:
-      - python
