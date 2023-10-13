@@ -13,6 +13,3 @@ spack:
 
   view: false
   include: []
-
-  specs:
-
