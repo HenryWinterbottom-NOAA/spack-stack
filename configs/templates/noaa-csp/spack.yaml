@@ -1,0 +1,29 @@
+spack:
+  concretizer:
+    unify: when_possible
+
+  view: false
+  include: []
+
+  definitions:
+  - compilers: ['%aocc', '%apple-clang', '%gcc', '%intel']
+  - packages:
+      - global-workflow-env
+      - gsi-env
+      - ufs-utils-env
+      - ufs-weather-model-env
+      - upp-env
+      - ww3-env
+
+      # Various fms tags (list all to avoid duplicate packages)
+      - fms@release-jcsda
+      - fms@2023.04
+
+      # Various crtm tags (list all to avoid duplicate packages)
+      - crtm@2.4.0.1
+      - crtm@v2.4.1-jedi
+
+  specs:
+    - matrix:
+      - [$packages]
+      - [$compilers]
